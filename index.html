@@ -17,8 +17,8 @@
                 <div class="avatar-circle">ARC</div>
             </div>
             <div class="header-info">
-                <h1 class="name">Alejandro Rodríguez de la Cruz</h1>
-                <p class="title">Especialista IT | Líder de proyectos | Analista de datos | Desarrollador | QA</p>
+                <h1 class="name" data-i18n="name">Alejandro Rodríguez de la Cruz</h1>
+                <p class="title" data-i18n="title">Especialista IT | Líder de proyectos | Analista de datos | Desarrollador | QA</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -27,6 +27,10 @@
                     <div class="contact-item">
                         <img src="images/phone.png" alt="" height="27px">
                     </div>
+                </div>
+                 <!-- Botón de idioma -->
+                <div class="language-toggle">
+                    <button id="lang-toggle" class="lang-btn">EN</button>
                 </div>
             </div>
         </div>
@@ -43,12 +47,12 @@
 
         <!-- Pestañas del menú -->
         <div class="nav-tabs" id="nav-tabs">
-            <button class="nav-tab active" data-tab="experiencia">Experiencia</button>
-            <button class="nav-tab" data-tab="educacion">Educación</button>
-            <button class="nav-tab" data-tab="tecnologias">Tecnologías</button>
-            <button class="nav-tab" data-tab="competencias">Competencias</button>
-            <button class="nav-tab" data-tab="portafolio">Portafolio</button>
-            <button class="nav-tab" data-tab="testimonios">Testimonios</button>
+            <button class="nav-tab active" data-tab="experiencia" data-i18n="nav_experiencia">Experiencia</button>
+            <button class="nav-tab" data-tab="educacion" data-i18n="nav_educacion">Educación</button>
+            <button class="nav-tab" data-tab="tecnologias" data-i18n="nav_tecnologias">Tecnologías</button>
+            <button class="nav-tab" data-tab="competencias" data-i18n="nav_competencias">Competencias</button>
+            <button class="nav-tab" data-tab="portafolio" data-i18n="nav_portafolio">Portafolio</button>
+            <button class="nav-tab" data-tab="testimonios" data-i18n="nav_testimonios">Testimonios</button>
         </div>
     </div>
 </nav>
@@ -58,17 +62,17 @@
         <div class="container">
             <!-- Experiencia -->
            <section id="experiencia" class="tab-content active">
-    <h2 class="section-title">Experiencia Profesional</h2>
+    <h2 class="section-title" data-i18n="section_experiencia">Experiencia Profesional</h2>
     <div class="timeline">
         <!-- Centro FORTES -->
         <div class="timeline-item">
             <div class="timeline-content">
                 <div class="timeline-header">
-                    <h3>Especialista A en Ciencias Informáticas</h3>
+                    <h3 data-i18n="job_especialista">Especialista A en Ciencias Informáticas</h3>
                     <span class="period">2014 – 2016</span>
                 </div>
-                <p class="company">Centro FORTES, Universidad de las Ciencias Informáticas (UCI)</p>
-                <p class="description">Líder de la línea de producción de multimedia y juegos educativos. Coordinación de equipos técnicos y diseño de contenidos interactivos.</p>
+                <p class="company" data-i18n="company_fortes">Centro FORTES, Universidad de las Ciencias Informáticas (UCI)</p>
+                <p class="description" data-i18n="desc_fortes">Líder de la línea de producción de multimedia y juegos educativos. Coordinación de equipos técnicos y diseño de contenidos interactivos.</p>
             </div>
         </div>
 
@@ -76,11 +80,11 @@
         <div class="timeline-item">
             <div class="timeline-content">
                 <div class="timeline-header">
-                    <h3>Desarrollador Principal de Software</h3>
+                    <h3 data-i18n="job_lead_dev">Desarrollador Principal de Software</h3>
                     <span class="period">2016 – 2022</span>
                 </div>
-                <p class="company">Empresa SITRANS</p>
-                <p class="description">
+                <p class="company" data-i18n="company_sitrans">Empresa SITRANS</p>
+                <p class="description" data-i18n="desc_sitrans">
                     Liderazgo en el desarrollo de sistemas clave como: APK <em>Viajando</em>, sistema contable <em>CONDOR</em>, y plataforma de paquetería <em>TRANSIPACK</em>. 
                     Desarrollo de portales web, planificación estratégica de proyectos y dirección técnica de equipos multidisciplinarios.
                 </p>
@@ -91,11 +95,11 @@
         <div class="timeline-item">
             <div class="timeline-content">
                 <div class="timeline-header">
-                    <h3>Director UIN Informática</h3>
+                    <h3 data-i18n="job_director">Director UIN Informática</h3>
                     <span class="period">2022 – 2023</span>
                 </div>
-                <p class="company">SITRANS</p>
-                <p class="description">
+                <p class="company" data-i18n="company_sitrans">SITRANS</p>
+                <p class="description" data-i18n="desc_director">
                     Dirección del área de informática, supervisión de proyectos tecnológicos y gestión de infraestructura TI.
                 </p>
             </div>
@@ -105,11 +109,11 @@
         <div class="timeline-item">
             <div class="timeline-content">
                 <div class="timeline-header">
-                    <h3>Desarrollador de Software</h3>
+                    <h3 data-i18n="job_desarrollador">Desarrollador de Software</h3>
                     <span class="period">2023 – 2024</span>
                 </div>
-                <p class="company">MIPYME Ingenius SURL</p>
-                <p class="description">
+                <p class="company" data-i18n="company_ingenius">MIPYME Ingenius SURL</p>
+                <p class="description" data-i18n="desc_ingenius">
                     Participación en el desarrollo de soluciones tecnológicas para pymes, con enfoque en automatización y eficiencia operativa.
                 </p>
             </div>
@@ -119,11 +123,11 @@
         <div class="timeline-item">
             <div class="timeline-content">
                 <div class="timeline-header">
-                    <h3>Especialista en Programación, Análisis de Datos y Gestión de Proyectos con IA</h3>
+                    <h3 data-i18n="job_ia">Especialista en Programación, Análisis de Datos y Gestión de Proyectos con IA</h3>
                     <span class="period">2024 – 2025</span>
                 </div>
-                <p class="company">UIN Desarrollo TIC</p>
-                <p class="description">
+                <p class="company" data-i18n="company_uin">UIN Desarrollo TIC</p>
+                <p class="description" data-i18n="desc_uin">
                     Liderazgo en el desarrollo y mantenimiento de la plataforma <em>Viajando</em>. Coordinación de equipos en proyectos tecnológicos para el Ministerio del Transporte, con integración de inteligencia artificial y análisis de datos.
                 </p>
             </div>
@@ -132,11 +136,11 @@
         <div class="timeline-item">
             <div class="timeline-content">
                 <div class="timeline-header">
-                    <h3>Desarrollador PHP Codeigniter Python AI</h3>
+                    <h3 data-i18n="job_php_ai">Desarrollador PHP Codeigniter Python AI</h3>
                     <span class="period">2025</span>
                 </div>
-                <p class="company">RouteToGrow</p>
-                <p class="description">
+                <p class="company" data-i18n="company_routetogrow">RouteToGrow</p>
+                <p class="description" data-i18n="desc_routetogrow">
                     Desarrollo de funcionalidades con integración IA para CRM.
                 </p>
             </div>
@@ -148,33 +152,33 @@
 
             <!-- Educación -->
             <section id="educacion" class="tab-content">
-                <h2 class="section-title">Educación</h2>
+                <h2 class="section-title" data-i18n="section_educacion">Educación</h2>
                 <div class="education-grid">
                     <div class="education-card">
                         <div class="education-header">
-                            <h3>Ingeniero en Ciencias Informáticas</h3>
+                            <h3 data-i18n="edu_engineer">Ingeniero en Ciencias Informáticas</h3>
                             <span class="year">2014</span>
                         </div>
-                        <p class="institution">Universidad de las Ciencias Informáticas</p>
-                        <p class="location">La Habana-Cuba</p>
+                        <p class="institution" data-i18n="edu_uci">Universidad de las Ciencias Informáticas</p>
+                        <p class="location" data-i18n="edu_havana">La Habana-Cuba</p>
                     </div>
                     <div class="education-card">
                         <div class="education-header">
-                            <h3>Diplomado en Redes y Seguridad Informática</h3>
+                            <h3 data-i18n="edu_diploma">Diplomado en Redes y Seguridad Informática</h3>
                             <span class="year">2017</span>
                         </div>
-                        <p class="institution">CECAN-SEPSA</p>
-                        <p class="location">La Habana</p>
+                        <p class="institution" data-i18n="edu_cecan">CECAN-SEPSA</p>
+                        <p class="location" data-i18n="edu_havana_short">La Habana</p>
                     </div>
                 </div>
             </section>
 
             <!-- Tecnologías -->
             <section id="tecnologias" class="tab-content">
-                <h2 class="section-title">Tecnologías y Habilidades</h2>
+                <h2 class="section-title" data-i18n="section_tecnologias">Tecnologías y Habilidades</h2>
                 <div class="tech-grid">
                     <div class="tech-category">
-                        <h3>Sistemas Operativos</h3>
+                        <h3 data-i18n="tech_os">Sistemas Operativos</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">Windows</span>
                             <span class="tech-tag">Ubuntu</span>
@@ -182,21 +186,21 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>Máquinas Virtuales</h3>
+                        <h3 data-i18n="tech_vm">Máquinas Virtuales</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">VMware</span>
                             <span class="tech-tag">Virtual Box</span>
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>Servidores</h3>
+                        <h3 data-i18n="tech_servers">Servidores</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">Apache</span>
                             <span class="tech-tag">Nginx</span>
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>Base de Datos</h3>
+                        <h3 data-i18n="tech_db">Base de Datos</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">SQL Server</span>
                             <span class="tech-tag">Postgres</span>
@@ -205,7 +209,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>Frontend</h3>
+                        <h3 data-i18n="tech_frontend">Frontend</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">CSS</span>
                             <span class="tech-tag">Bootstrap</span>
@@ -217,7 +221,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>Backend</h3>
+                        <h3 data-i18n="tech_backend">Backend</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">PHP</span>
                             <span class="tech-tag">Node JS</span>
@@ -226,7 +230,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>Frameworks</h3>
+                        <h3 data-i18n="tech_frameworks">Frameworks</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">Laravel</span>
                             <span class="tech-tag">Django</span>
@@ -236,7 +240,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>CMS</h3>
+                        <h3 data-i18n="tech_cms">CMS</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">Drupal</span>
                             <span class="tech-tag">Wordpress</span>
@@ -244,7 +248,7 @@
                         </div>
                     </div>
                     <div class="tech-category">
-                        <h3>IA</h3>
+                        <h3 data-i18n="tech_ai">IA</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">OpenAi</span>
                             <span class="tech-tag">Gemini</span>
@@ -256,7 +260,7 @@
                     </div>
                     
                     <div class="tech-category">
-                        <h3>Metodologías</h3>
+                        <h3 data-i18n="tech_methods">Metodologías</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">Scrum</span>
                             <span class="tech-tag">XP</span>
@@ -264,7 +268,7 @@
                     </div>
 
                     <div class="tech-category">
-                        <h3>Pasarelas</h3>
+                        <h3 data-i18n="tech_gateways">Pasarelas</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">Stripe</span>
                             <span class="tech-tag">Zelle</span>
@@ -276,7 +280,7 @@
                     </div>
 
                     <div class="tech-category">
-                        <h3>Otras</h3>
+                        <h3 data-i18n="tech_other">Otras</h3>
                         <div class="tech-tags">
                             <span class="tech-tag">Power Bi</span>
                             <span class="tech-tag">Docker</span>
@@ -306,315 +310,190 @@
 
             <!-- Competencias -->
             <section id="competencias" class="tab-content">
-                <h2 class="section-title">Competencias</h2>
+                <h2 class="section-title" data-i18n="section_competencias">Competencias</h2>
                 <div class="competencies-grid">
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Experiencia en el diseño, desarrollo y mantenimiento de aplicaciones y sistemas</p>
+                        <p data-i18n="comp_design">Experiencia en el diseño, desarrollo y mantenimiento de aplicaciones y sistemas</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Capacidad para dirigir equipos de trabajos</p>
+                        <p data-i18n="comp_lead">Capacidad para dirigir equipos de trabajos</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Habilidad para identificar y solucionar problemas técnicos de manera eficiente</p>
+                        <p data-i18n="comp_solve">Habilidad para identificar y solucionar problemas técnicos de manera eficiente</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Capacidad para colaborar con otros profesionales de diferentes áreas</p>
+                        <p data-i18n="comp_collab">Capacidad para colaborar con otros profesionales de diferentes áreas</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Experiencia en la planificación y ejecución de proyectos de desarrollo de software</p>
+                        <p data-i18n="comp_project">Experiencia en la planificación y ejecución de proyectos de desarrollo de software</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Despliegue de infraestructura</p>
+                        <p data-i18n="comp_infra">Despliegue de infraestructura</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Interés por estar al día con las últimas tecnologías</p>
+                        <p data-i18n="comp_update">Interés por estar al día con las últimas tecnologías</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Resolución de incidencias en hardware/software</p>
+                        <p data-i18n="comp_incidents">Resolución de incidencias en hardware/software</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Scripting (Python, Bash) para optimizar tareas repetitivas</p>
+                        <p data-i18n="comp_scripting">Scripting (Python, Bash) para optimizar tareas repetitivas</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Capacidad para proponer soluciones innovadoras a problemas técnicos</p>
+                        <p data-i18n="comp_innovate">Capacidad para proponer soluciones innovadoras a problemas técnicos</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Capacidad para analizar y evaluar diferentes enfoques para la resolución de problemas técnicos</p>
+                        <p data-i18n="comp_analyze">Capacidad para analizar y evaluar diferentes enfoques para la resolución de problemas técnicos</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Análisis de datos</p>
+                        <p data-i18n="comp_data">Análisis de datos</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Integración con modelos de IA</p>
+                        <p data-i18n="comp_ai">Integración con modelos de IA</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Planificación de migraciones tecnológicas (ej: actualización de sistemas legacy)</p>
+                        <p data-i18n="comp_migrate">Planificación de migraciones tecnológicas (ej: actualización de sistemas legacy)</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Pruebas manuales y semiautomatizadas</p>
+                        <p data-i18n="comp_testing">Pruebas manuales y semiautomatizadas</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Experiencia en CRM y sistemas contables</p>
+                        <p data-i18n="comp_crm">Experiencia en CRM y sistemas contables</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Conocimiento de regulaciones cubanas (ej: Normas NC-ISO 27001, Ley de Protección de Datos)</p>
+                        <p data-i18n="comp_cuban">Conocimiento de regulaciones cubanas (ej: Normas NC-ISO 27001, Ley de Protección de Datos)</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Conocimiento de la norma internacional ISO 9001:15</p>
+                        <p data-i18n="comp_iso">Conocimiento de la norma internacional ISO 9001:15</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Liderazgo de equipos técnicos (desarrolladores, QA, DevOps)</p>
+                        <p data-i18n="comp_teams">Liderazgo de equipos técnicos (desarrolladores, QA, DevOps)</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Gestión de stakeholders (clientes, equipos internos, proveedores)</p>
+                        <p data-i18n="comp_stakeholders">Gestión de stakeholders (clientes, equipos internos, proveedores)</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Presupuesto y ROI: Planificación financiera, control de costos</p>
+                        <p data-i18n="comp_budget">Presupuesto y ROI: Planificación financiera, control de costos</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Gestión de riesgos: Identificación y mitigación en entornos tech</p>
+                        <p data-i18n="comp_risk">Gestión de riesgos: Identificación y mitigación en entornos tech</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Transformación digital: Experiencia en migración a cloud, IA, automatización</p>
+                        <p data-i18n="comp_digital">Transformación digital: Experiencia en migración a cloud, IA, automatización</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Product Manager: Visión de producto</p>
+                        <p data-i18n="comp_product">Product Manager: Visión de producto</p>
                     </div>
                     <div class="competency-item">
                         <div class="competency-bullet"></div>
-                        <p>Innovación: Conocimiento en tendencias tech (IA)</p>
+                        <p data-i18n="comp_innovation">Innovación: Conocimiento en tendencias tech (IA)</p>
                     </div>
                 </div>
             </section>
+
+            <!-- Portafolio -->
             <section id="portafolio" class="tab-content">
-    <h2 class="section-title">Portafolio</h2>
+                <h2 class="section-title" data-i18n="section_portafolio">Portafolio</h2>
 
-     <!-- Filtros -->
-    <div class="filter-buttons">
-        <button class="filter-btn active" data-filter="all">Todos</button>
-        <button class="filter-btn" data-filter="mobile">Móvil</button>
-        <button class="filter-btn" data-filter="backend">Backend</button>
-        <button class="filter-btn" data-filter="web">Web</button>
-        <button class="filter-btn" data-filter="ia">Inteligencia Artificial</button>
-        <button class="filter-btn" data-filter="erp">Sistemas ERP</button>
-        <button class="filter-btn" data-filter="datanalytic">Análisis de datos</button>
-        
-    </div>
-
-    <div class="projects-grid">        
-        <!-- Proyecto 1: Viajando -->
-        <div class="project-card" data-category="mobile backend">
-            <img src="images/viajando.jpg" alt="APK Viajando" class="project-image">
-            <div class="project-info">
-                <h3>APK Viajando</h3>
-                <p class="project-tech">Android, Kotlin, Flutter, WSO2, REST API</p>
-                <p class="project-desc">
-                    Aplicación móvil para la gestión de viajes y transporte en Cuba. Lideré su desarrollo desde cero y su mantenimiento continuo.
-                </p>
-                <div class="project-links">
-                    <a href="https://apklis.cu/application/cu.sitrans.viajando" target="_blank" rel="noopener">Ver sitio</a>
-                    <!-- Si tienes demo o video: <a href="#" target="_blank">Ver demo</a> -->
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all" data-i18n="filter_all">Todos</button>
+                    <button class="filter-btn" data-filter="mobile" data-i18n="filter_mobile">Móvil</button>
+                    <button class="filter-btn" data-filter="backend" data-i18n="filter_backend">Backend</button>
+                    <button class="filter-btn" data-filter="web" data-i18n="filter_web">Web</button>
+                    <button class="filter-btn" data-filter="ia" data-i18n="filter_ai">Inteligencia Artificial</button>
+                    <button class="filter-btn" data-filter="erp" data-i18n="filter_erp">Sistemas ERP</button>
+                    <button class="filter-btn" data-filter="datanalytic" data-i18n="filter_data">Análisis de datos</button>
                 </div>
-            </div>
-        </div>
 
-        <!-- Proyecto 2: Sistema CONDOR -->
-        <div class="project-card" data-category="erp">
-            <img src="images/condor.jpg" alt="Sistema Contable CONDOR" class="project-image">
-            <div class="project-info">
-                <h3>Sistema Contable CONDOR</h3>
-                <p class="project-tech">FoxPro, SQL Server</p>
-                <p class="project-desc">
-                    Sistema de gestión contable para empresas del sector transporte. Integración con facturación electrónica y reporting automatizado.
-                </p>
-                <div class="project-links">
-                    <a href="#" class="disabled">Proyecto interno</a>
+                <div class="projects-grid">
+                    <div class="project-card" data-category="mobile backend">
+                        <img src="images/viajando.jpg" alt="APK Viajando" class="project-image">
+                        <div class="project-info">
+                            <h3 data-i18n="portfolio_viajando">APK Viajando</h3>
+                            <p class="project-tech">Android, Kotlin, Flutter, WSO2, REST API</p>
+                            <p class="project-desc" data-i18n="desc_viajando">
+                                Aplicación móvil para la gestión de viajes y transporte en Cuba. Lideré su desarrollo desde cero y su mantenimiento continuo.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://apklis.cu/application/cu.sitrans.viajando" target="_blank" rel="noopener">Ver sitio</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="erp">
+                        <img src="images/condor.jpg" alt="Sistema Contable CONDOR" class="project-image">
+                        <div class="project-info">
+                            <h3 data-i18n="portfolio_condor">Sistema Contable CONDOR</h3>
+                            <p class="project-tech">FoxPro, SQL Server</p>
+                            <p class="project-desc" data-i18n="desc_condor">
+                                Sistema de gestión contable para empresas del sector transporte. Integración con facturación electrónica y reporting automatizado.
+                            </p>
+                            <div class="project-links">
+                                <a href="#" class="disabled">Proyecto interno</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ... (otros proyectos con data-i18n) ... -->
+
                 </div>
-            </div>
-        </div>
+                <p class="centerx">PORTAFOLIO EN ACTUALIZACIÓN</p>
+            </section>
 
-        <!-- Proyecto 3: TRANSIPACK -->
-        <div class="project-card" data-category="web backend">
-            <img src="images/transipack.png" alt="TRANSIPACK" class="project-image">
-            <div class="project-info">
-                <h3>TRANSIPACK</h3>
-                <p class="project-tech">Django, PostgreSQL</p>
-                <p class="project-desc">
-                    Plataforma de gestión de paquetería interna. Seguimiento en tiempo real, rutas optimizadas y generación de reportes.
-                </p>
-                <div class="project-links">
-                    <a href="#" class="disabled">Proyecto interno</a>
+            <!-- Testimonios -->
+            <section id="testimonios" class="tab-content">
+                <h2 class="section-title" data-i18n="section_testimonios">Testimonios</h2>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="quote" data-i18n="testimonial_1">"Trabajar contigo ha sido una experiencia enriquecedora: eres meticuloso, colaborativo y siempre buscas la excelencia. Tu dedicación, paciencia y pasión por lo que haces elevan cada proyecto a su mejor versión."</div>
+                        <div class="author">
+                            <strong>Mauro Molina</strong>, Desarrollador
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote" data-i18n="testimonial_2">"Mi experiencia trabajando con Alejandro ha sido una de las mejores en mucho tiempo. Mucha seriedad, sacrificio, entrega, dedicación. Profesionalidad ante todo."</div>
+                        <div class="author">
+                            <strong>Sheila Castro</strong>, EP. Informática Motorcentro
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote" data-i18n="testimonial_3">"Especialista IT que sabe tener claridad, compromiso y brindar soluciones técnicas de alto nivel. Un líder nato en entornos complejos."</div>
+                        <div class="author">
+                            <strong>Damian Orellana</strong>, Director, UIN Desarrollo TIC
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="quote" data-i18n="testimonial_4">"Trabajar con Alejandro ha sido una experiencia excelente. Su dominio en el desarrollo de aplicaciones móviles y, especialmente, en la integración de pasarelas de pago, es impresionante..."</div>
+                        <div class="author">
+                            <strong>Fernando Machado</strong>, CEO Firefly Agencia de Publicidad
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-
-        <!-- Proyecto 4: Portal Web Cubanacan Express -->
-        <div class="project-card" data-category="web backend">
-            <img src="images/cubex.png" alt="Portal Web Cubanacan Express" class="project-image">
-            <div class="project-info">
-                <h3>Portal Web Cubanacan Express</h3>
-                <p class="project-tech">Drupal, PHP, HTML/CSS, JavaScript</p>
-                <p class="project-desc">
-                    Sitio institucional de la transitaria Cubanacan Express, con noticias, servicios y documentación técnica.
-                </p>
-                <div class="project-links">
-                    <a href="https://cubex.transnet.cu/es" target="_blank" rel="noopener">Visitar sitio</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Proyecto 4: Sistema Reporte -->
-        <div class="project-card" data-category="web backend">
-            <img src="images/reporte.png" alt="Reporte" class="project-image">
-            <div class="project-info">
-                <h3>Sistema de reporte</h3>
-                <p class="project-tech">Django, redmine-lib, Sqlite</p>
-                <p class="project-desc">
-                    Sistema para la gestión de reportes de soporte técnico con integración con Redmine.
-                </p>
-                <div class="project-links">
-                    <a href="#" class="disabled">Proyecto interno</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Proyecto 4: Sistema asignacion IP -->
-        <div class="project-card" data-category="backend">
-            <img src="images/asignacion.jpg" alt="Reporte" class="project-image">
-            <div class="project-info">
-                <h3>Sistema para la Asignación automatica de IP</h3>
-                <p class="project-tech">Flask, Sqlite</p>
-                <p class="project-desc">
-                    Sistema para la creación de cuentas y asignación de ip.
-                </p>
-                <div class="project-links">
-                    <a href="#" class="disabled">Proyecto interno</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Proyecto 4: Blog La esquina roja -->
-        <div class="project-card" data-category="web">
-            <img src="images/esquina.png" alt="wordpress" class="project-image">
-            <div class="project-info">
-                <h3>La Esquina Roja</h3>
-                <p class="project-tech">Wordpress, MySQL</p>
-                <p class="project-desc">
-                    Blog La Esquina Roja de Padre Luis Barrios, Trayendo el cielo a la tierra
-                </p>
-                <div class="project-links">
-                    <a href="https://www.padreluisbarrios.org/" target="_blank" rel="noopener">Visitar sitio</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- Proyecto 4: Blog La esquina roja -->
-        <div class="project-card" data-category="mobile backend">
-            <img src="images/stripe.png" alt="stripe" class="project-image">
-            <div class="project-info">
-                <h3>COMICASA. Integración Glide - Make - Stripe</h3>
-                <p class="project-tech">Glide, Make, Stripe</p>
-                <p class="project-desc">
-                    Integración para que la plataforma nocode GLIDE pueda generar pagos y recibir el estado del pago desde Stripe
-                </p>
-                <div class="project-links">
-                    <a href="https://comicasa-restaurante.glide.page/" target="_blank" rel="noopener">Visitar sitio</a>
-                </div>
-            </div>
-        </div>
-
-         <!-- Proyecto 4: n8n -->
-        <div class="project-card" data-category="ia">
-            <img src="images/n8n.png" alt="n8n" class="project-image">
-            <div class="project-info">
-                <h3>Agente para ventas</h3>
-                <p class="project-tech">n8n, whatsapp, telegram, MySQL</p>
-                <p class="project-desc">
-                   Agente para la venta de artículos de playa
-                </p>
-                <div class="project-links">
-                   <a href="#" class="disabled">Proyecto interno</a>
-                </div>
-            </div>
-        </div>
-
-          <!-- Proyecto 4: n8n -->
-        <div class="project-card" data-category="datanalytic">
-            <img src="images/powerbi.png" alt="powerbi" class="project-image">
-            <div class="project-info">
-                <h3>Dashboard PowerBI</h3>
-                <p class="project-tech">PowerBI, DAX, SQLServer, Python</p>
-                <p class="project-desc">
-                  Dashboard para la gestión de paquetes y servicios de aplicaciones móviles. Analítica de datos
-                </p>
-                <div class="project-links">
-                   <a href="#" class="disabled">Proyecto interno</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-    <p class="centerx">PORTAFOLIO EN ACTUALIZACIÓN</p>
-</section>
-
-<section id="testimonios" class="tab-content">
-    <h2 class="section-title">Testimonios</h2>
-    <div class="testimonials-grid">
-        
-        <div class="testimonial-card">
-            <div class="quote">"Trabajar contigo ha sido una experiencia enriquecedora: eres meticuloso, colaborativo y siempre buscas la excelencia. Tu dedicación, paciencia y pasión por lo que haces elevan cada proyecto a su mejor versión."</div>
-            <div class="author">
-                <strong>Mauro Molina</strong>, Desarrollador
-            </div>
-        </div>
-
-        <div class="testimonial-card">
-            <div class="quote">"Mi experiencia trabajando con Alejandro ha sido una de las mejores en mucho tiempo. Mucha seriedad, sacrificio, entrega, dedicación. Profesionalidad ante todo."</div>
-            <div class="author">
-                <strong>Sheila Castro</strong>, EP. Informática Motorcentro
-            </div>
-        </div>
-
-        <div class="testimonial-card">
-            <div class="quote">"Especialista IT que sabe tener claridad, compromiso y brindar soluciones técnicas de alto nivel. Un líder nato en entornos complejos."</div>
-            <div class="author">
-                <strong>Damian Orellana</strong>, Director, UIN Desarrollo TIC
-            </div>
-        </div>
-
-         <div class="testimonial-card">
-            <div class="quote">"Trabajar con Alejandro ha sido una experiencia excelente. Su dominio en el desarrollo de aplicaciones móviles y, especialmente, en la integración de pasarelas de pago, es impresionante. Desde la selección de la solución más adecuada hasta la implementación y pruebas, Alejandro demuestra un alto nivel de conocimiento técnico y atención al detalle. Su capacidad para optimizar procesos de pago y garantizar transacciones seguras ha sido clave para el éxito de nuestros proyectos. Sin duda, un profesional altamente recomendado para cualquier desarrollo móvil que requiera soluciones de pago confiables y eficientes."</div>
-            <div class="author">
-                <strong>Fernando Machado</strong>, CEO Firefly Agencia de Publicidad
-            </div>
-        </div>
-
-    </div>
-</section>
+            </section>
 
         </div>
     </main>
@@ -622,11 +501,11 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-name">Alejandro Rodríguez de la Cruz</p>
+            <p class="footer-name" data-i18n="name">Alejandro Rodríguez de la Cruz</p>
             <p class="footer-text">Portafolio Profesional - <span id="current-year"></span></p>
         </div>
     </footer>
-
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

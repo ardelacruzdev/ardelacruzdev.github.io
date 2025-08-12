@@ -695,3 +695,31 @@ html {
         align-items: center;
     }
 }
+
+.language-toggle {
+    margin-left: auto; /* Empuja el botón a la derecha en escritorio */
+}
+
+.lang-btn {
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.lang-btn:hover {
+    background: #5a67d8;
+}
+
+/* En móvil, centrado o al final */
+@media (max-width: 768px) {
+    .language-toggle {
+        margin: 10px 0 0;
+        order: 3;
+        margin-left: 0;
+    }
+}
