@@ -1,5 +1,67 @@
+const menuToggle = document.getElementById('menu-toggle');
+    const navTabs = document.getElementById('nav-tabs');
+
+    menuToggle.addEventListener('click', () => {
+        navTabs.classList.toggle('active');
+        
+        // Rotar el ícono
+        const icon = menuToggle.querySelector('i');
+        if (navTabs.classList.contains('active')) {
+            icon.classList.remove('fa-bars');
+            icon.classList.add('fa-times'); // Cambia a "X"
+        } else {
+            icon.classList.remove('fa-times');
+            icon.classList.add('fa-bars');
+        }
+    });
+
+    // Opcional: cerrar el menú al hacer clic en una pestaña
+    document.querySelectorAll('.nav-tab').forEach(tab => {
+        tab.addEventListener('click', () => {
+            if (window.innerWidth <= 768) {
+                navTabs.classList.remove('active');
+                const icon = menuToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    });
+
+    // Ajustar al cambiar el tamaño de la ventana
+    window.addEventListener('resize', () => {
+        if (window.innerWidth > 768) {
+            navTabs.classList.remove('active');
+            menuToggle.querySelector('i').classList.remove('fa-times');
+            menuToggle.querySelector('i').classList.add('fa-bars');
+        }
+    });
+    
 // Tab Navigation Functionality
 document.addEventListener('DOMContentLoaded', function() {
+
+    const buttons = document.querySelectorAll('.filter-btn');
+        const projects = document.querySelectorAll('.project-card');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                // Actualizar botón activo
+                buttons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+
+                const filter = button.getAttribute('data-filter');
+
+                projects.forEach(project => {
+                    const categories = project.getAttribute('data-category');
+                    if (filter === 'all' || categories.includes(filter)) {
+                        project.style.display = 'block';
+                    } else {
+                        project.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+
     // Get all tab buttons and tab content sections
     const tabButtons = document.querySelectorAll('.nav-tab');
     const tabContents = document.querySelectorAll('.tab-content');

@@ -467,16 +467,17 @@ body {
         height: 100px;
         font-size: 1.5rem;
     }
+     .avatar,.title,.contact-info{
+        display: none;
+    }
+    #navbar{
+        top:90px;
+    }
 
     .name {
-        font-size: 1.75rem;
+        font-size: 16px;
     }
-
-    .title {
-        font-size: 1rem;
-    }
-
-    .nav-tab {
+   .nav-tab {
         padding: 0.75rem 1rem;
         font-size: 0.9rem;
     }
@@ -514,6 +515,33 @@ html {
     padding: 40px 20px;
 }
 
+/* Filtros */
+.filter-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.filter-btn {
+    padding: 8px 16px;
+    border: 1px solid #3498db;
+    background: white;
+    color: #3498db;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #3498db;
+    color: white;
+}
+
+/* Grilla de proyectos */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -563,11 +591,6 @@ html {
     margin: 0 0 12px 0;
 }
 
-.project-links {
-    display: flex;
-    gap: 12px;
-}
-
 .project-links a {
     font-size: 0.9em;
     color: #2980b9;
@@ -581,9 +604,94 @@ html {
 .project-links .disabled {
     color: #7f8c8d;
     cursor: not-allowed;
-    text-decoration: none;
 }
 
 .centerx{
     margin: 4% 38%;
+}
+
+#testimonios {
+    padding: 40px 20px;
+    
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 20px;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-left: 4px solid #3498db;
+}
+
+.quote {
+    font-style: italic;
+    color: #333;
+    line-height: 1.6;
+    margin: 0 0 12px 0;
+}
+
+.author {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 0.95em;
+}
+
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto por defecto en escritorio */
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #2d3748;
+    cursor: pointer;
+    padding: 0.75rem 1rem;
+}
+
+.menu-toggle i {
+    transition: transform 0.3s ease;
+}
+
+/* Mostrar hamburguesa en móviles */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-tabs {
+        display: none; /* Ocultar pestañas por defecto en móvil */
+        flex-direction: column;
+        background: white;
+        padding: 0.5rem 0;
+        border-top: 1px solid #e2e8f0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .nav-tabs.active {
+        display: flex;
+        max-height: 300px; /* Altura suficiente para el menú */
+        padding: 1rem 0;
+    }
+
+    .nav-tab {
+        padding: 0.75rem 2rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    /* Ajuste del contenedor */
+    .nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

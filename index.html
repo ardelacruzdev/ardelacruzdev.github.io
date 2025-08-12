@@ -4,48 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alejandro Rodríguez de la Cruz - Portafolio Profesional</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="avatar">
-                    <div class="avatar-circle">ARC</div>
-                </div>
-                <div class="header-info">
-                    <h1 class="name">Alejandro Rodríguez de la Cruz</h1>
-                    <p class="title">Especialista IT | Líder de proyectos | Analista de datos | Desarrollador | QA</p>
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>developcuba@gmail.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+53 51163807</span>
-                        </div>
+   <header class="header" id="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="avatar">
+                <div class="avatar-circle">ARC</div>
+            </div>
+            <div class="header-info">
+                <h1 class="name">Alejandro Rodríguez de la Cruz</h1>
+                <p class="title">Especialista IT | Líder de proyectos | Analista de datos | Desarrollador | QA</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>developcuba@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="images/phone.png" alt="" height="27px">
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-tabs">
-                <button class="nav-tab active" data-tab="experiencia">Experiencia</button>
-                <button class="nav-tab" data-tab="educacion">Educación</button>
-                <button class="nav-tab" data-tab="tecnologias">Tecnologías</button>
-                <button class="nav-tab" data-tab="competencias">Competencias</button>
-                <button class="nav-tab" data-tab="portafolio">Portafolio</button>
-            </div>
+<!-- Navigation -->
+<nav class="nav" id="navbar">
+    <div class="container">
+        <!-- Botón hamburguesa (visible solo en móvil) -->
+        <div class="menu-toggle" id="menu-toggle">
+            <i class="fas fa-bars"></i>
         </div>
-    </nav>
+
+        <!-- Pestañas del menú -->
+        <div class="nav-tabs" id="nav-tabs">
+            <button class="nav-tab active" data-tab="experiencia">Experiencia</button>
+            <button class="nav-tab" data-tab="educacion">Educación</button>
+            <button class="nav-tab" data-tab="tecnologias">Tecnologías</button>
+            <button class="nav-tab" data-tab="competencias">Competencias</button>
+            <button class="nav-tab" data-tab="portafolio">Portafolio</button>
+            <button class="nav-tab" data-tab="testimonios">Testimonios</button>
+        </div>
+    </div>
+</nav>
 
     <!-- Main Content -->
     <main class="main">
@@ -71,7 +77,7 @@
             <div class="timeline-content">
                 <div class="timeline-header">
                     <h3>Desarrollador Principal de Software</h3>
-                    <span class="period">2016 – 2025</span>
+                    <span class="period">2016 – 2022</span>
                 </div>
                 <p class="company">Empresa SITRANS</p>
                 <p class="description">
@@ -114,11 +120,24 @@
             <div class="timeline-content">
                 <div class="timeline-header">
                     <h3>Especialista en Programación, Análisis de Datos y Gestión de Proyectos con IA</h3>
-                    <span class="period">2024 – Actualidad</span>
+                    <span class="period">2024 – 2025</span>
                 </div>
                 <p class="company">UIN Desarrollo TIC</p>
                 <p class="description">
                     Liderazgo en el desarrollo y mantenimiento de la plataforma <em>Viajando</em>. Coordinación de equipos en proyectos tecnológicos para el Ministerio del Transporte, con integración de inteligencia artificial y análisis de datos.
+                </p>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-header">
+                    <h3>Desarrollador PHP Codeigniter Python AI</h3>
+                    <span class="period">2025</span>
+                </div>
+                <p class="company">RouteToGrow</p>
+                <p class="description">
+                    Desarrollo de funcionalidades con integración IA para CRM.
                 </p>
             </div>
         </div>
@@ -378,10 +397,22 @@
             </section>
             <section id="portafolio" class="tab-content">
     <h2 class="section-title">Portafolio</h2>
-    <div class="projects-grid">
+
+     <!-- Filtros -->
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="mobile">Móvil</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ia">Inteligencia Artificial</button>
+        <button class="filter-btn" data-filter="erp">Sistemas ERP</button>
+        <button class="filter-btn" data-filter="datanalytic">Análisis de datos</button>
         
+    </div>
+
+    <div class="projects-grid">        
         <!-- Proyecto 1: Viajando -->
-        <div class="project-card">
+        <div class="project-card" data-category="mobile backend">
             <img src="images/viajando.jpg" alt="APK Viajando" class="project-image">
             <div class="project-info">
                 <h3>APK Viajando</h3>
@@ -397,7 +428,7 @@
         </div>
 
         <!-- Proyecto 2: Sistema CONDOR -->
-        <div class="project-card">
+        <div class="project-card" data-category="erp">
             <img src="images/condor.jpg" alt="Sistema Contable CONDOR" class="project-image">
             <div class="project-info">
                 <h3>Sistema Contable CONDOR</h3>
@@ -412,7 +443,7 @@
         </div>
 
         <!-- Proyecto 3: TRANSIPACK -->
-        <div class="project-card">
+        <div class="project-card" data-category="web backend">
             <img src="images/transipack.png" alt="TRANSIPACK" class="project-image">
             <div class="project-info">
                 <h3>TRANSIPACK</h3>
@@ -427,7 +458,7 @@
         </div>
 
         <!-- Proyecto 4: Portal Web Cubanacan Express -->
-        <div class="project-card">
+        <div class="project-card" data-category="web backend">
             <img src="images/cubex.png" alt="Portal Web Cubanacan Express" class="project-image">
             <div class="project-info">
                 <h3>Portal Web Cubanacan Express</h3>
@@ -442,7 +473,7 @@
         </div>
 
         <!-- Proyecto 4: Sistema Reporte -->
-        <div class="project-card">
+        <div class="project-card" data-category="web backend">
             <img src="images/reporte.png" alt="Reporte" class="project-image">
             <div class="project-info">
                 <h3>Sistema de reporte</h3>
@@ -457,7 +488,7 @@
         </div>
 
         <!-- Proyecto 4: Sistema asignacion IP -->
-        <div class="project-card">
+        <div class="project-card" data-category="backend">
             <img src="images/asignacion.jpg" alt="Reporte" class="project-image">
             <div class="project-info">
                 <h3>Sistema para la Asignación automatica de IP</h3>
@@ -472,7 +503,7 @@
         </div>
 
         <!-- Proyecto 4: Blog La esquina roja -->
-        <div class="project-card">
+        <div class="project-card" data-category="web">
             <img src="images/esquina.png" alt="wordpress" class="project-image">
             <div class="project-info">
                 <h3>La Esquina Roja</h3>
@@ -487,7 +518,7 @@
         </div>
 
         <!-- Proyecto 4: Blog La esquina roja -->
-        <div class="project-card">
+        <div class="project-card" data-category="backend">
             <img src="images/stripe.png" alt="stripe" class="project-image">
             <div class="project-info">
                 <h3>COMICASA. Integración Glide - Make - Stripe</h3>
@@ -502,7 +533,7 @@
         </div>
 
          <!-- Proyecto 4: n8n -->
-        <div class="project-card">
+        <div class="project-card" data-category="ia">
             <img src="images/n8n.png" alt="n8n" class="project-image">
             <div class="project-info">
                 <h3>Agente para ventas</h3>
@@ -517,7 +548,7 @@
         </div>
 
           <!-- Proyecto 4: n8n -->
-        <div class="project-card">
+        <div class="project-card" data-category="datanalytic">
             <img src="images/powerbi.png" alt="powerbi" class="project-image">
             <div class="project-info">
                 <h3>Dashboard PowerBI</h3>
@@ -534,6 +565,35 @@
     </div>
     <p class="centerx">PORTAFOLIO EN ACTUALIZACIÓN</p>
 </section>
+
+<section id="testimonios" class="tab-content">
+    <h2 class="section-title">Testimonios</h2>
+    <div class="testimonials-grid">
+        
+        <div class="testimonial-card">
+            <div class="quote">"Trabajar contigo ha sido una experiencia enriquecedora: eres meticuloso, colaborativo y siempre buscas la excelencia. Tu dedicación, paciencia y pasión por lo que haces elevan cada proyecto a su mejor versión."</div>
+            <div class="author">
+                <strong>Mauro Molina</strong>, Desarrollador
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="quote">"Mi experiencia trabajando con Alejandro ha sido una de las mejores en mucho tiempo. Mucha seriedad, sacrificio, entrega, dedicación. Profesionalidad ante todo."</div>
+            <div class="author">
+                <strong>Sheila Castro</strong>, EP. Informática Motorcentro
+            </div>
+        </div>
+
+        <div class="testimonial-card">
+            <div class="quote">"Trabajar con Ángel significa tener claridad, compromiso y soluciones técnicas de alto nivel. Un líder nato en entornos complejos."</div>
+            <div class="author">
+                <strong>Raúl Martínez</strong>, Coordinador de TI, UIN Desarrollo TIC
+            </div>
+        </div>
+
+    </div>
+</section>
+
         </div>
     </main>
 
