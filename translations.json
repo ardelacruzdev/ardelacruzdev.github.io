@@ -56,6 +56,8 @@
     "portfolio_comicasa": "COMICASA. Integración Glide - Make - Stripe",
     "portfolio_n8n": "Agente para ventas",
     "portfolio_powerbi": "Dashboard PowerBI",
+    "portfolio_siescribo": "Red social SIESCRIBO",
+    "portfolio_efirma":"Integración Portal Web EFIRMA.cu",
 
     "desc_viajando": "Aplicación móvil para la gestión de viajes y transporte en Cuba. Lideré su desarrollo desde cero y su mantenimiento continuo.",
     "desc_condor": "Sistema contable para la gestión financiera de empresas. Implementé funcionalidades clave y aseguré su integración con otros sistemas.",
@@ -67,6 +69,8 @@
     "desc_comicasa": "Integración de herramientas como Glide, Make y Stripe para optimizar procesos en COMICASA.",
     "desc_n8n": "Desarrollo de un agente para ventas utilizando n8n, mejorando la automatización de procesos comerciales.",
     "desc_powerbi": "Dashboard interactivo en PowerBI para la visualización de datos empresariales.",
+    "desc_siescribo": "Red social para escritores, permite la venta de libros, socializar con lectores y escritores.",
+    "desc_efirma": "Integración Portal web promocional para la solicitud de firmas digitales en Cuba",
 
     "tech_os": "Sistemas Operativos",
     "tech_vm": "Máquinas Virtuales",
@@ -110,7 +114,8 @@
     "testimonial_1": "Trabajar contigo ha sido una experiencia enriquecedora: eres meticuloso, colaborativo y siempre buscas la excelencia. Tu dedicación, paciencia y pasión por lo que haces elevan cada proyecto a su mejor versión.",
     "testimonial_2": "Mi experiencia trabajando con Alejandro ha sido una de las mejores en mucho tiempo. Mucha seriedad, sacrificio, entrega, dedicación. Profesionalidad ante todo.",
     "testimonial_3": "Especialista IT que sabe tener claridad, compromiso y brindar soluciones técnicas de alto nivel. Un líder nato en entornos complejos.",
-    "testimonial_4": "Trabajar con Alejandro ha sido una experiencia excelente. Su dominio en el desarrollo de aplicaciones móviles y, especialmente, en la integración de pasarelas de pago, es impresionante. Desde la selección de la solución más adecuada hasta la implementación y pruebas, Alejandro demuestra un alto nivel de conocimiento técnico y atención al detalle. Su capacidad para optimizar procesos de pago y garantizar transacciones seguras ha sido clave para el éxito de nuestros proyectos. Sin duda, un profesional altamente recomendado para cualquier desarrollo móvil que requiera soluciones de pago confiables y eficientes."
+    "testimonial_4": "Trabajar con Alejandro ha sido una experiencia excelente. Su dominio en el desarrollo de aplicaciones móviles y, especialmente, en la integración de pasarelas de pago, es impresionante. Desde la selección de la solución más adecuada hasta la implementación y pruebas, Alejandro demuestra un alto nivel de conocimiento técnico y atención al detalle. Su capacidad para optimizar procesos de pago y garantizar transacciones seguras ha sido clave para el éxito de nuestros proyectos. Sin duda, un profesional altamente recomendado para cualquier desarrollo móvil que requiera soluciones de pago confiables y eficientes.",
+    "testimonial_5": "Tuve el placer de trabajar junto a Alejandro, es un excelente profesional con experiencia liderando equipos y tratando a clientes. En el corto tiempo que trabaje en Sitrans lo ví desempeñarse muy bien en todas las tareas y muchas veces bajo la presión de mm diferentes momentos, lo que lo hace excelente para resolver problemas bajo tensión."
   },
   "en": {
     "name": "Alejandro Rodríguez de la Cruz",
@@ -169,6 +174,8 @@
     "portfolio_comicasa": "COMICASA. Glide - Make - Stripe Integration",
     "portfolio_n8n": "Sales Agent",
     "portfolio_powerbi": "PowerBI Dashboard",
+    "portfolio_siescribo":"Social network SIESCRIBO",
+    "portfolio_efirma":"Website EFIRMA.cu",
 
     "desc_viajando": "Mobile application for travel and transportation management in Cuba. I led its development from scratch and its ongoing maintenance.",
     "desc_condor": "Accounting system for financial management of companies. I implemented key functionalities and ensured its integration with other systems.",
@@ -180,6 +187,8 @@
     "desc_comicasa": "Integration of tools like Glide, Make, and Stripe to optimize processes in COMICASA.",
     "desc_n8n": "Development of a sales agent using n8n, improving the automation of business processes.",
     "desc_powerbi": "Interactive dashboard in PowerBI for visualizing business data.",
+    "desc_siescribo":"Social network for writers, allowing for book sales and socializing with readers and writers.",
+    "desc_efirma":"Promotional web portal integration for requesting digital signatures in Cuba.",
 
     "tech_os": "Operating Systems",
     "tech_vm": "Virtual Machines",
@@ -223,6 +232,7 @@
     "testimonial_1": "Working with you has been an enriching experience: you are meticulous, collaborative, and always strive for excellence. Your dedication, patience, and passion elevate every project to its best version.",
     "testimonial_2": "My experience working with Alejandro has been one of the best in a long time. Seriousness, sacrifice, commitment, dedication. Professionalism above all.",
     "testimonial_3": "An IT specialist who brings clarity, commitment, and high-level technical solutions. A natural leader in complex environments.",
-    "testimonial_4": "Working with Alejandro has been an excellent experience. His expertise in mobile app development and, especially, in payment gateway integration, is impressive. From selecting the most suitable solution to implementation and testing, Alejandro demonstrates a high level of technical knowledge and attention to detail. His ability to optimize payment processes and ensure secure transactions has been key to the success of our projects. Without a doubt, a highly recommended professional for any mobile development requiring reliable and efficient payment solutions."
-  }
+    "testimonial_4": "Working with Alejandro has been an excellent experience. His expertise in mobile app development and, especially, in payment gateway integration, is impressive. From selecting the most suitable solution to implementation and testing, Alejandro demonstrates a high level of technical knowledge and attention to detail. His ability to optimize payment processes and ensure secure transactions has been key to the success of our projects. Without a doubt, a highly recommended professional for any mobile development requiring reliable and efficient payment solutions.",
+    "testimonial_5": "I had the pleasure of working alongside Alejandro. He's an excellent professional with experience leading teams and dealing with clients. In my short time at Sitrans, I saw him perform very well in all tasks, often under pressure at different times, which makes him excellent at solving problems under stress."
+    }
 }
