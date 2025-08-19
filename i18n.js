@@ -1,5 +1,5 @@
 // i18n.js - Sistema de traducción bilingüe
-let currentLang = 'es';
+let currentLang = 'en';
 // Cargar traducciones
 async function loadTranslations() {
     const response = await fetch('translations.json');
